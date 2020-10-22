@@ -1,5 +1,14 @@
 @charset "utf-8";
+*{
+  margin:0;
 
+}
+div{
+  color: #d31c53;
+}
+.contents{
+  margin:8px;
+}
 #btn_area{
   margin: 0px 0px 8px 0px;
   text-align: right;
@@ -15,6 +24,8 @@
   width:calc(100% - 22px);
   height:100%;
   padding: 10px;
+}
+textarea{
   border:1px solid #d31c53;
 }
 
@@ -41,4 +52,36 @@
 .btn:hover span {
   -webkit-transform: rotateX(360deg);
   transform: rotateX(360deg);
+}
+/* モーダル */
+.modal{
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal__bg{
+  background: rgba(0,0,0,0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content{
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 30%;
+}
+#import_text{
+  width:100%;
+}
+.modal_btn_area{
+  text-align: center;
+}
+.center{
+  text-align: center;
 }

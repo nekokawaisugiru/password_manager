@@ -12,14 +12,41 @@
 </head>
 
 <body>
-  <div id="btn_area">
-    <button class="btn" onclick='import_data()'><i class="fas fa-lock-open"></i> <span>IMPORT</span></button>
-    <button class="btn" onclick='export_data()'><i class="fas fa-lock"></i> <span>EXPORT</span></button>
+  <div class="contents">
+    <div id="btn_area">
+      <button class="btn js-modal-open" onclick='import_data()'><i class="fas fa-lock-open"></i> <span>IMPORT</span></button>
+      <button class="btn js-modal-close" onclick='export_data()'><i class="fas fa-lock"></i> <span>EXPORT</span></button>
+    </div>
+    <div id="text_area">
+      <textarea></textarea>
+    </div>
   </div>
-  <div id="text_area">
-    <textarea></textarea>
+  <div class="modal js-modal" id="import_modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+      <div>
+        入力データを貼り付けてください
+      </div>
+      <div>
+        <textarea id="import_text"></textarea>
+      </div>
+      <div class="modal_btn_area">
+        <button class="btn js-modal-close">CANCEL</button>
+        <button class="btn js-modal-close" id="import_ok">OK</button>
+      </div>
+    </div>
   </div>
-
+  <div class="modal js-modal" id="export_modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+      <div class="center">
+        クリップボードにコピーしました
+      </div>
+      <div class="modal_btn_area">
+        <button class="btn js-modal-close">OK</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
