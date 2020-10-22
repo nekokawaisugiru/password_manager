@@ -7,13 +7,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <link rel="stylesheet" href="lib/style.css">
   <script src="lib/script.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 </head>
 
 <body>
   <div id="btn_area">
-    <button class="btn" onclick='import_data()'><span>IMPORT</span></button>
-    <button class="btn" onclick='export_data()'><span>EXPORT</span></button>
+    <button class="btn" onclick='import_data()'><i class="fas fa-lock-open"></i> <span>IMPORT</span></button>
+    <button class="btn" onclick='export_data()'><i class="fas fa-lock"></i> <span>EXPORT</span></button>
   </div>
   <div id="text_area">
     <textarea></textarea>
