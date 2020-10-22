@@ -43,6 +43,9 @@ textarea{
   overflow: hidden;/*はみ出た部分を隠す*/
   text-decoration:none;/*下線は消す*/
 }
+.btn:hover{
+  cursor: pointer;
+}
 
 .btn span {
   display:inline-block;
