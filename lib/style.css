@@ -1,6 +1,8 @@
-/* Add your styles here */
+@charset "utf-8";
+
 #btn_area{
   margin: 0px 0px 8px 0px;
+  text-align: right;
 }
 
 #text_area{
@@ -8,15 +10,15 @@
   height:90vh;
 }
 #text_area textarea{
-width:100%;
-height:100%;
-padding: 0;
-border:1px solid #d31c53;
+  width:100%;
+  height:100%;
+  padding: 0;
+  border:1px solid #d31c53;
 }
 
 .btn {
   color: #FFF;/*文字・アイコン色*/
-  border-radius: 4px;/*角丸に*/
+  border-radius: 10x;/*角丸に*/
   border:none;
   display: inline-block;
   height: 40px;/*高さ*/
