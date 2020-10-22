@@ -1,16 +1,23 @@
 <!doctype html>
 
 <html>
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="lib/style.css">
-    <script src="lib/script.js"></script>
-  </head>
 
-  <body>
-    <button onclick='import_data()'>IMPORT</button>
-    <button onclick='export_data()'>EXPORT</button>
-    <div id="text_area"><textarea></textarea></div>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="lib/style.css">
+  <script src="lib/script.js"></script>
 
-  </body>
+</head>
+
+<body>
+  <div id="btn_area">
+    <button class="btn" onclick='import_data()'><span>IMPORT</span></button>
+    <button class="btn" onclick='export_data()'><span>EXPORT</span></button>
+  </div>
+  <div id="text_area">
+    <textarea></textarea>
+  </div>
+
+</body>
+
 </html>

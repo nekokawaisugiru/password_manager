@@ -1,12 +1,40 @@
 /* Add your styles here */
+#btn_area{
+  margin: 0px 0px 8px 0px;
+}
 
 #text_area{
   width:100%;
-  height:500px;
+  height:90vh;
 }
 #text_area textarea{
 width:100%;
 height:100%;
 padding: 0;
-border:1px solid #ff00ff;
+border:1px solid #d31c53;
+}
+
+.btn {
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 4px;/*角丸に*/
+  border:none;
+  display: inline-block;
+  height: 40px;/*高さ*/
+  width: 190px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 20px;/*文字のサイズ*/
+  line-height: 34px;/*高さと合わせる*/
+  background: #d31c53;
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+}
+
+.btn span {
+  display:inline-block;
+  transition: .5s;
+}
+
+.btn:hover span {
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
 }
