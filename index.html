@@ -16,25 +16,27 @@
 <body>
   <div class="contents">
     <div id="btn_area">
-      <button class="btn js-modal-open" onclick='import_data()'><i class="fas fa-lock-open"></i> <span>IMPORT</span></button>
-      <button class="btn js-modal-close" onclick='export_data()'><i class="fas fa-lock"></i> <span>EXPORT</span></button>
+      <button class="btn btn-large js-modal-open" onclick='import_data()'><i class="fas fa-lock-open"></i> <span>IMPORT</span></button>
+      <button class="btn btn-large js-modal-close" onclick='export_data()'><i class="fas fa-lock"></i> <span>EXPORT</span></button>
     </div>
-    <div id="text_area">
-      <textarea></textarea>
+    <div class="card_area">
+
+      <div class="card add_card"><button class="btn add_btn">+</button></div>
+      
     </div>
   </div>
   <div class="modal js-modal" id="import_modal">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
       <div>
-        入力データを貼り付けてください
+        暗号文を貼り付けてください
       </div>
       <div>
-        <textarea id="import_text"></textarea>
+        <textarea class="modal_textarea" id="import_text"></textarea>
       </div>
       <div class="modal_btn_area">
-        <button class="btn js-modal-close">CANCEL</button>
-        <button class="btn js-modal-close" id="import_ok">OK</button>
+        <button class="btn btn-large js-modal-close">CANCEL</button>
+        <button class="btn btn-large js-modal-close" id="import_ok">OK</button>
       </div>
     </div>
   </div>
@@ -42,10 +44,31 @@
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
       <div class="center">
-        クリップボードにコピーしました
+        暗号文をクリップボードにコピーしました
       </div>
       <div class="modal_btn_area">
-        <button class="btn js-modal-close">OK</button>
+        <button class="btn btn-large js-modal-close">OK</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal js-modal" id="new_account">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+      <div id="modal_title">
+        新規アカウント追加
+      </div>
+      <div>
+        アカウント名:<textarea class="modal_textarea" id="name"></textarea>
+      </div>
+      <div>
+        ID:<textarea class="modal_textarea" id="id"></textarea>
+      </div>
+      <div>
+        PW:<textarea class="modal_textarea" id="pw"></textarea>
+      </div>
+      <div class="modal_btn_area">
+        <button class="btn btn-large js-modal-close">CANCEL</button>
+        <button class="btn btn-large js-modal-close" id="register">REGISTER</button>
       </div>
     </div>
   </div>

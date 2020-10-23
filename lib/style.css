@@ -1,7 +1,8 @@
 @charset "utf-8";
 *{
   margin:0;
-
+  box-sizing: border-box;
+  font-size: 20px;/*文字のサイズ*/
 }
 div{
   color: #d31c53;
@@ -9,11 +10,45 @@ div{
 .contents{
   margin:8px;
 }
+.right{
+  float: right;
+}
 #btn_area{
-  margin: 0px 0px 8px 0px;
+  margin: 0px auto 8px auto;
+  width:90%;
   text-align: right;
 }
+.btn {
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 10x;/*角丸に*/
+  border:none;
+  display: inline-block;
+  text-align: center;/*中身を中央寄せ*/
+  background: #d31c53;
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+}
+.btn-large{
+  line-height: 34px;/*高さと合わせる*/
+  height: 40px;/*高さ*/
+  width: 190px;/*幅*/
+}
+.btn-mini{
+  line-height: 20px;/*高さと合わせる*/
+}
+.btn:hover{
+  cursor: pointer;
+}
 
+.btn span {
+  display:inline-block;
+  transition: .5s;
+}
+
+.btn:hover span {
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
 #text_area{
   width:100%;
   height:90vh;
@@ -29,32 +64,62 @@ textarea{
   border:1px solid #d31c53;
 }
 
-.btn {
-  color: #FFF;/*文字・アイコン色*/
-  border-radius: 10x;/*角丸に*/
-  border:none;
+/* カード */
+.card_area{
+  width:90%;
+  margin : 0 auto 0 auto;
+}
+.card{
   display: inline-block;
-  height: 40px;/*高さ*/
-  width: 190px;/*幅*/
-  text-align: center;/*中身を中央寄せ*/
-  font-size: 20px;/*文字のサイズ*/
-  line-height: 34px;/*高さと合わせる*/
+  vertical-align: top;
+  border:#d31c53 1px solid;
+  width:350px;
+  height:200px;
+  margin:10px;
+  padding:10px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.add_card{
   background: #d31c53;
-  overflow: hidden;/*はみ出た部分を隠す*/
-  text-decoration:none;/*下線は消す*/
 }
-.btn:hover{
-  cursor: pointer;
+.add_card .btn{
+  display: block;
+  font-size: 150px;
+  width:100%;
+  height:100%;
+  margin: 0px auto 0px auto;
+}
+.title{
+  padding:4px;
+  background: #d31c53;
+  color: #FFF;
+  height: 40px;
+}
+.row{
+  height: 40px;
+  padding:4px;
+  margin-bottom: 8px;
+}
+.row:last-child(){
+  margin-bottom: 0x;
 }
 
-.btn span {
-  display:inline-block;
-  transition: .5s;
+.row div,.row input,.row button{
+  height : 32px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 0px;
+  vertical-align: top;
 }
-
-.btn:hover span {
-  -webkit-transform: rotateX(360deg);
-  transform: rotateX(360deg);
+.clmn_1{
+  width:10%;
+}
+.clmn_9{
+  width:87%;
+}
+.clmn_9 input{
+  width:90%;
 }
 /* モーダル */
 .modal{
@@ -79,7 +144,7 @@ textarea{
   transform: translate(-50%,-50%);
   width: 30%;
 }
-#import_text{
+.modal_textarea{
   width:100%;
 }
 .modal_btn_area{
