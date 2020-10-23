@@ -120,6 +120,7 @@ textarea{
 }
 .clmn_9 input{
   width:90%;
+  border:1px solid #d31c53;
 }
 /* モーダル */
 .modal{
@@ -143,6 +144,9 @@ textarea{
   top: 50%;
   transform: translate(-50%,-50%);
   width: 500px;
+}
+#modal_title{
+  font-weight: bold;
 }
 .modal_textarea{
   width:100%;
