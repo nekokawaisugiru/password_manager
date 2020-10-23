@@ -31,7 +31,7 @@ div{
 .btn-large{
   line-height: 34px;/*高さと合わせる*/
   height: 40px;/*高さ*/
-  width: 190px;/*幅*/
+  width: 160px;/*幅*/
 }
 .btn-mini{
   line-height: 20px;/*高さと合わせる*/
@@ -142,7 +142,7 @@ textarea{
   position: absolute;
   top: 50%;
   transform: translate(-50%,-50%);
-  width: 30%;
+  width: 500px;
 }
 .modal_textarea{
   width:100%;
