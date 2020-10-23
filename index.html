@@ -54,7 +54,7 @@
       </div>
     </div>
   </div>
-  <div class="modal js-modal" id="new_account">
+  <div class="modal js-modal" id="account_modal">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
       <div id="modal_title">
@@ -71,8 +71,22 @@
       </div>
       <div class="modal_btn_area">
         <button class="btn btn-large js-modal-close">CANCEL</button>
-        <button class="btn btn-large js-modal-close" id="register">REGISTER</button>
+        <button class="btn btn-large js-modal-close" id="modal_ok">REGISTER</button>
       </div>
+      <input id="idx" type="hidden" value=""/>
+    </div>
+  </div>
+  <div class="modal js-modal" id="confirm_modal">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+      <div>
+        削除しますがよろしいですか？
+      </div>
+      <div class="modal_btn_area">
+        <button class="btn btn-large js-modal-close">CANCEL</button>
+        <button class="btn btn-large" id="confirm_ok">OK</button>
+      </div>
+      <input id="idx" type="hidden" value=""/>
     </div>
   </div>
 </body>
