@@ -14,9 +14,21 @@ div{
   float: right;
 }
 #btn_area{
+  position: fixed;
   margin: 0px auto 8px auto;
-  width:90%;
+  width:100%;
   text-align: right;
+  background: #fadfe7;
+  z-index: 2;
+  top:0px;
+  left:0px;
+  border-bottom: dotted  #d31c53 1px ;
+}
+#btn_area .btn{
+  margin : 10px 10px 10px 0px;
+}
+#dummy_btn_area{
+  height:68px;
 }
 .btn {
   color: #FFF;/*文字・アイコン色*/
@@ -152,6 +164,7 @@ textarea{
 
 /* モーダル */
 .modal{
+  z-index: 3;
   display: none;
   height: 100vh;
   position: fixed;
