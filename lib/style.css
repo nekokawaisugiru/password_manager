@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-size: 20px;/*文字のサイズ*/
 }
+
 div{
   color: #d31c53;
 }
@@ -197,4 +198,39 @@ textarea{
 }
 .center{
   text-align: center;
+}
+@media screen and (max-width:480px) {
+  *{
+    margin:0;
+    box-sizing: border-box;
+    font-size:14px;
+  } 
+  .contents{
+    margin:2px;
+  }
+  #btn_area{
+    text-align: center;
+  }
+  #btn_area .btn{
+    margin : 10px;
+  }
+  .btn-large{
+    width:120px;
+  }
+  .card{
+    margin:4px;
+    padding:6px;
+  }
+  .title span{
+    line-height: 32px;
+  }
+
+  .clmn_9 input {
+    width: 85%;
+    border: 1px solid #d31c53;
+}
+  .modal__content{
+    width: 90%;
+    padding: 20px;
+  }
 }
